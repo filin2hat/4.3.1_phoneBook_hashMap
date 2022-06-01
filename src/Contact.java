@@ -11,7 +11,7 @@ public class Contact {
 
     @Override
     public String toString() {
-        return "Имя контакта: " + name +"\nНомер контакта: " + number;
+        return name + " >>> " + number;
     }
 
     @Override
@@ -23,5 +23,9 @@ public class Contact {
     @Override
     public int hashCode() {
         return Objects.hash(name, number);
+    }
+
+    public int getNumber() {
+        return number;
     }
 }
